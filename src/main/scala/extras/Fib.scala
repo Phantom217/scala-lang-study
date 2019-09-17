@@ -28,7 +28,7 @@ object TailRecStyle {
   def fibTailRec(n: Int): Int = {
     @annotation.tailrec
     def fib(i: Int, v: Int, vNext: Int): Int =
-      if (i ==n) v
+      if (i == n) v
       else fib(i + 1, vNext, v + vNext)
     fib(0, 0, 1)
   }
