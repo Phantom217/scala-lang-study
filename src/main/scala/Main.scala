@@ -2,10 +2,21 @@ import samples._
 import extras._
 
 object Main extends App {
-  extras.StreamStyle
   // JavaInput.jinput
-  stack_int
-  stack_string
+  // stack_int
+  // stack_string
+
+  // val option = 1
+  // option match {
+  //   case 1 => TSimple.hello
+  //   case 2 => TVar.datatypes
+  //   case 3 => TSel.selections
+  //   case 4 => TLoop.loops
+  //   case 5 => TSub.subprograms
+  //   case 6 => ScalaInput.sinput
+  //   case 7 => JavaInput.jinput
+  //   case _ => break()
+  // }
 
 
   def stack_int: Unit = {
