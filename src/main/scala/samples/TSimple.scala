@@ -1,7 +1,8 @@
 package samples
 
 object TSimple {
-  def hello: Unit = {
-    println("Hello")
+  def hello: String = {
+    val helloText: String = "Hello"
+    helloText
   }
 }
