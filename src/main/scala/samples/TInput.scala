@@ -1,7 +1,8 @@
 package samples
 
+import scala.io.StdIn._
+
 object ScalaInput {
-  import scala.io.StdIn._
 
   def sinput: Unit = {
 
