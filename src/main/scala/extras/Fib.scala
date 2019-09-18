@@ -34,7 +34,8 @@ object TailRecStyle {
   }
 }
 
-object StreamStyle {
-  val fibStream: Stream[Int] =
-    0 #:: 1 #:: (fibStream zip fibStream.tail).map(n => n._1 + n._2)
-}
+// Not too sure how this works so not putting it in demo
+// object StreamStyle {
+//   val fibStream: Stream[Int] =
+//     0 #:: 1 #:: (fibStream zip fibStream.tail).map(n => n._1 + n._2)
+// }

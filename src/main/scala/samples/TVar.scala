@@ -1,6 +1,10 @@
 package samples
 
 object TVar {
+  // The data types of Scala (there are no data types beginning with lower-case
+  // letters - i.e. primitive types, primitives do not exist in Scala)
+  // All the data types in Scala are objects
+
   def datatypes: Unit = {
     val byte:     Byte      = 64
     val short:    Short     = 20

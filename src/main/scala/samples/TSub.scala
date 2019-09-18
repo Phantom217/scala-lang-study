@@ -1,6 +1,9 @@
 package samples
 
 object TSub {
+  // Example of subprograms in Scala (the way this code is called in the main
+  // method is yet another example of this)
+
   def subprograms: Unit = {
     var m = sub1
     println(s"m = $m")

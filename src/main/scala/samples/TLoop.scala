@@ -1,6 +1,8 @@
 package samples
 
 object TLoop {
+  // Examples of `for`, `while`, and `do-while` loops
+
   def loops: Unit = {
     val a = Array("apple", "banana", "orange")
     var counter: Double = 0
@@ -23,7 +25,5 @@ object TLoop {
       counter += 1
       counter *= 2
     }while(counter <= 200)
-
-
   }
 }

@@ -1,6 +1,8 @@
 import extras._
 
 object ExStack {
+  // code to create a stack of any type to demonstrate generic typing
+
   def stack_int: Unit = {
     val stack = new GenericClasses.Stack[Int]
 

@@ -3,6 +3,7 @@ package samples
 import scala.io.StdIn._
 
 object ScalaInput {
+  // input using only native scala objects
 
   def sinput: Unit = {
 
@@ -19,6 +20,7 @@ object ScalaInput {
 
 object JavaInput {
   import java.util.Scanner
+  // input using Java's Scanner object
 
   def jinput: Unit = {
     print("Enter your name, age and weight: ")

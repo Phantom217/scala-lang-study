@@ -1,7 +1,13 @@
 package samples
 
 object TSel {
+  // Examples of `if`, `if-else`, nested `if-else`, and `else-if`
+
   def selections: Unit = {
+
+    // col 1 shows one way of itinializing a variable in Scala
+    // col 2 shows off Scala's interpreted feature
+    // col 3 is just a different way of writing col 1
     val i1: Int = 1; val i2 = 2; val i3 : Int = 3
     val i4: Int = 4; val i5 = 5; val i6 : Int = 6
     val i7: Int = 7; val i8 = 8; val i9 : Int = 9

@@ -1,7 +1,9 @@
 package extras
 
 object GenericClasses {
-  class Stack[A] {
+  // demo generic typed classes
+
+  class Stack[A] {    // Stack of any type denoted as [A]
     private var elements: List[A] = Nil
     def push(x: A) { elements = x :: elements }
     def peek: A = elements.head
