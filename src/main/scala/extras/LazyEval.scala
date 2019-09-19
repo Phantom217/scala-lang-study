@@ -33,30 +33,30 @@ object LazyEval {
 
     // Creating a stream but only printing the first element
     println("Creating a stream with 4 numbers using #:")
-    val stream1: Stream[Int] = 1 #:: 2 #:: 3 #:: 4 #:: Stream.empty
+    val stream1: LazyList[Int] = 1 #:: 2 #:: 3 #:: 4 #:: LazyList.empty
     println(s"Elements of stream1 = $stream1")
 
     println("\n")
 
     // Printing all elements of stream 1
     println("Printing all elements of stream:")
-    stream1.take(4).print
+    stream1 take 4 foreach println
 
     println("\n")
 
     // Showing that no IndexOutOfBoundsException was thrown
     println("What happens if you take more than what is in the stream?")
-    stream1.take(20).print
+    stream1 take 20 foreach println
 
     println("\n")
 
     // Infinite stream
-    println("Taking only 10 numbers from an infinite stream:")
-    infiniteNumberStream(1).take(10).print
+    // println("Taking only 10 numbers from an infinite stream:")
+    // infiniteNumberLazyList(1).take(10).print
   }
 
   /* Do not use this def when creating the menu; only used for another def */
-  def infiniteNumberStream(n: Int): Stream[Int] = {
-    Stream.cons(n, infiniteNumberStream(n + 1))
-  }
+  // def infiniteNumberLazyList(n: Int): LazyList[Int] = {
+  //   LazyList.cons(n, infiniteNumberLazyList(n + 1))
+  // }
 }
