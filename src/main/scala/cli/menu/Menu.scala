@@ -2,6 +2,8 @@ package cli.menu
 
 import scala.io.StdIn._
 
+import samples._
+
 object CliMenu {
 
   val actionMap = Map[Int, () => Boolean](1 -> handleOne, 2 -> handleTwo,
@@ -9,35 +11,35 @@ object CliMenu {
                   6 -> handleSix, 7 -> handleSeven, 0 -> exitMenu)
 
   def handleOne(): Boolean = {
-    println("selected 1")
+    println(s"${TSimple.hello}")
     true
   }
   def handleTwo(): Boolean = {
-    println("selected 2")
+    TVar.datatypes
     true
   }
   def handleThree(): Boolean = {
-    println("selected 3")
+    TSel.selections
     true
   }
   def handleFour(): Boolean = {
-    println("selected 4")
+    TLoop.loops
     true
   }
   def handleFive(): Boolean = {
-    println("selected 5")
+    TSub.subprograms
     true
   }
   def handleSix(): Boolean = {
-    println("selected 6")
+    ScalaInput.sinput
     true
   }
   def handleSeven(): Boolean = {
-    println("selected 7")
+    JavaInput.jinput
     true
   }
   def exitMenu(): Boolean = {
-    println("selected 0")
+    println("Bye")
     false
   }
 
@@ -45,13 +47,13 @@ object CliMenu {
     actionMap.get(option) match {
       case Some(f) => f()
       case None =>
-        println("Sorry, that command is not recognized")
+        println(s"Sorry, $option is not recognized")
         false
     }
   }
 
   def read_option: Int = {
-    println("""|Please select one of the following:
+    println(s"""|\nPlease select one of the following:
                | 1 - Simple (Hello)
                | 2 - Variables
                | 3 - Selections
