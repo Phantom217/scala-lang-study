@@ -55,6 +55,7 @@ object LazyEval {
     infiniteNumberStream(1).take(10).print
   }
 
+  /* Do not use this def when creating the menu; only used for another def */
   def infiniteNumberStream(n: Int): Stream[Int] = {
     Stream.cons(n, infiniteNumberStream(n + 1))
   }
