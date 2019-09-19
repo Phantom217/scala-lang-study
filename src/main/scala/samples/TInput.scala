@@ -11,10 +11,11 @@ object ScalaInput {
     val name = readLine("What is your name? ")
 
     // readInt lets you read an Int, but you have to prompt the user manually
+    println()
     print("How old are you? ")
     val age = readInt()
 
-    println(s"Your name is $name and you are $age years old.")
+    println(s"\nYour name is $name and you are $age years old.")
   }
 }
 
