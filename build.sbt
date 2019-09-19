@@ -1,3 +1,3 @@
-ThisBuild / scalaVersion := "2.12.8"
+ThisBuild / scalaVersion := "2.13.0"
 ThisBuild / organization := "paoerful"
 
