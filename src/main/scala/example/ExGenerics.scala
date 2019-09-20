@@ -1,6 +1,6 @@
 import extras._
 
-object ExStack {
+object ExGenerics {
   // code to create a stack of any type to demonstrate generic typing
 
   def stack_int: Unit = {
