@@ -1,3 +1,5 @@
+package example
+
 import extras._
 
 object ExGenerics {
@@ -9,6 +11,7 @@ object ExGenerics {
     stack.push(1)
     stack.push(2)
 
+    println(s"stack of type Integer:")
     println(stack.pop)
     println(stack.pop)
   }
@@ -17,7 +20,7 @@ object ExGenerics {
   class Apple extends Fruit
   class Banana extends Fruit
 
-  def stack_string: Unit = {
+  def stack_custom: Unit = {
     val stack  = new GenericClasses.Stack[Fruit]
     val apple  = new Apple
     val banana = new Banana
@@ -25,6 +28,7 @@ object ExGenerics {
     stack.push(apple)
     stack.push(banana)
 
+    println(s"\nstack of type Fruit:")
     println(stack.pop)
     println(stack.pop)
   }

@@ -9,18 +9,14 @@ object LazyEval {
     print(" awesome ")
     print(pao1)
 
-    println("\n")
-
     // Lazy evaluation
-    println("Lazy evaluation:")
+    println(s"\n\nLazy evaluation:")
     lazy val pao2 = { print(" Pao ") ; 5}
     print(" awesome ")
     print(pao2)
 
-    println("\n")
-
     // Cached Lazy evaluation
-    println("Cached lazy evaluation:")
+    println(s"\n\nCached lazy evaluation:")
     lazy val pao3 = { print(" Pao ") ; 5}
     print(" awesome ")
     print(pao3)
@@ -29,26 +25,18 @@ object LazyEval {
 
   // Demonstrating stream examples
   def stream: Unit = {
-    println("\n\n")
-
     // Creating a stream but only printing the first element
-    println("Creating a stream with 4 numbers using #:")
+    println(s"\n\n\nCreating a stream with 4 numbers using #:")
     val stream1: LazyList[Int] = 1 #:: 2 #:: 3 #:: 4 #:: LazyList.empty
     println(s"Elements of stream1 = $stream1")
 
-    println("\n")
-
     // Printing all elements of stream 1
-    println("Printing all elements of stream:")
+    println(s"\nPrinting all elements of stream:")
     stream1 take 4 foreach println
 
-    println("\n")
-
     // Showing that no IndexOutOfBoundsException was thrown
-    println("What happens if you take more than what is in the stream?")
+    println(s"\nWhat happens if you take more than what is in the stream?")
     stream1 take 20 foreach println
-
-    println("\n")
 
     // Infinite stream
     // println("Taking only 10 numbers from an infinite stream:")
