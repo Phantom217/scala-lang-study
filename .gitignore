@@ -12,5 +12,4 @@ project/plugins/project/
 .lib/
 *.class
 *.log
-lang.zip
-lang/
+scala-lang-study.zip
